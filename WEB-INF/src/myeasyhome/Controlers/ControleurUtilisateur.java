@@ -49,8 +49,8 @@ public class ControleurUtilisateur extends HttpServlet {
                              }else{
                             	type="admin";	 
                              }
-                             session.setAttribute("typeUser", type); 
-                             getServletContext().getRequestDispatcher("/vues/index.jsp?page=accueil")
+                             session.setAttribute("typeUser", type); ///vues/index.jsp?page=accueil
+                             getServletContext().getRequestDispatcher("/maison")
                              .forward(request, response);
                         }
                   } catch (UserException e) {
